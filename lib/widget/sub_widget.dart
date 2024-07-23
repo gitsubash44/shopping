@@ -16,4 +16,10 @@ class AppWidget {
     return TextStyle(
         color: Colors.black54, fontSize: 20, fontWeight: FontWeight.w500);
   }
+  // leight text style
+
+  static TextStyle SemiboldTextFeildStyle() {
+    return TextStyle(
+        color: Colors.black, fontSize: 20.0, fontWeight: FontWeight.bold);
+  }
 }

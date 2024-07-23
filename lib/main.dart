@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopping/pages/footernav.dart';
 import 'package:shopping/pages/home.dart';
 import 'package:shopping/pages/onboarding.dart';
 
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Home(),
+      home: FooterNav(),
       // home: Onboarding(),
     );
   }
