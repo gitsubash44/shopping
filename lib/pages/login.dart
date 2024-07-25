@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopping/widget/sub_widget.dart';
 
 class LogIn extends StatefulWidget {
   const LogIn({super.key});
@@ -17,13 +18,21 @@ class _LogInState extends State<LogIn> {
           child: Column(
             children: [
               ClipRRect(
-                  borderRadius: BorderRadius.circular(120),
-                  child: Image.asset(
-                    'images/boy.png',
-                    height: 200,
-                    width: 200,
-                    fit: BoxFit.cover,
-                  ))
+                borderRadius: BorderRadius.circular(120),
+                child: Image.asset(
+                  'images/boy.png',
+                  height: 200,
+                  width: 200,
+                  fit: BoxFit.cover,
+                ),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Text(
+                'Sign In',
+                style: AppWidget.SemiboldTextFeildStyle(),
+              ),
             ],
           ),
         ),
