@@ -120,18 +120,10 @@ class _LogInState extends State<LogIn> {
                       borderRadius: BorderRadius.circular(16),
                     ),
                     child: Center(
-                      child: GestureDetector(
-                        onTap: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => SignUp()));
-                        },
-                        child: Text(
-                          '  Login  ',
-                          style: TextStyle(
-                              fontSize: 22, fontWeight: FontWeight.bold),
-                        ),
+                      child: Text(
+                        '  Login  ',
+                        style: TextStyle(
+                            fontSize: 22, fontWeight: FontWeight.bold),
                       ),
                     ),
                   ),
@@ -146,12 +138,18 @@ class _LogInState extends State<LogIn> {
                       "Don't have an accout?",
                       style: AppWidget.lightTextFeildStyle(),
                     ),
-                    Text(
-                      ' Sign up ',
-                      style: TextStyle(
-                          color: Colors.green,
-                          fontSize: 18,
-                          fontWeight: FontWeight.w500),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => SignUp()));
+                      },
+                      child: Text(
+                        ' Sign up ',
+                        style: TextStyle(
+                            color: Colors.green,
+                            fontSize: 18,
+                            fontWeight: FontWeight.w500),
+                      ),
                     ),
                   ],
                 ),
